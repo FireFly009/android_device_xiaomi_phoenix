@@ -488,7 +488,8 @@ PRODUCT_PACKAGES += \
 
 # Shim
 PRODUCT_PACKAGES += \
-    libwatermark_shim
+    libwatermark_shim \
+    libpiex_shim
 
 # Telephony
 PRODUCT_PACKAGES += \
