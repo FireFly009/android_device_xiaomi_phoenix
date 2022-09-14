@@ -117,6 +117,12 @@ on boot
     start rmt_storage
     start rfs_access
 
+    # Setup runtime blkio
+    write /dev/blkio/blkio.weight 1000 
+    write /dev/blkio/background/blkio.weight 200 
+    write /dev/blkio/blkio.group_idle 2000
+    write /dev/blkio/background/blkio.group_idle 0
+
     # Setup runtime cpusets
     write /dev/cpuset/top-app/cpus 0-7
     write /dev/cpuset/foreground/cpus 0-5,7
