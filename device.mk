@@ -485,6 +485,11 @@ PRODUCT_PACKAGES += \
     fstab.emmc \
     ueventd.qcom.rc
 
+# RCS
+PRODUCT_PACKAGES += \
+    PresencePolling \
+    RcsService
+
 # RIL
 PRODUCT_PACKAGES += \
     android.system.net.netd@1.1.vendor \
